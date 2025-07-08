@@ -198,7 +198,7 @@ _global.HTMLCS.util = function() {
 
         if (element.currentStyle) {
             computedStyle = element.currentStyle;
-        } else if (window.getComputedStyle) {
+        } else if (window && window.getComputedStyle) {
             computedStyle = window.getComputedStyle(element, pseudo);
         }
 

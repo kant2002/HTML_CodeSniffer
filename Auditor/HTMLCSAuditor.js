@@ -1729,7 +1729,7 @@ _global.HTMLCSAuditor = new function()
 
             var windowWidth  = 0;
             var windowHeight = 0;
-            if (window.innerWidth) {
+            if (window && window.innerWidth) {
                 // Will work on Mozilla, Opera and Safari etc.
                 windowWidth  = window.innerWidth;
                 windowHeight = window.innerHeight;
@@ -1750,11 +1750,11 @@ _global.HTMLCSAuditor = new function()
                         windowHeight -= scrollWidth;
                     }
                 }
-            } else if (doc.documentElement && (doc.documentElement.clientWidth || doc.documentElement.clientHeight)) {
+            } else if (doc && doc.documentElement && (doc.documentElement.clientWidth || doc.documentElement.clientHeight)) {
                 // Internet Explorer.
                 windowWidth  = doc.documentElement.clientWidth;
                 windowHeight = doc.documentElement.clientHeight;
-            } else if (doc.body && (doc.body.clientWidth || doc.body.clientHeight)) {
+            } else if (doc && doc.body && (doc.body.clientWidth || doc.body.clientHeight)) {
                 // Browsers that are in quirks mode or weird examples fall through here.
                 windowWidth  = doc.body.clientWidth;
                 windowHeight = doc.body.clientHeight;
