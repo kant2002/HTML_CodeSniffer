@@ -1978,7 +1978,11 @@ _global.HTMLCSAuditor = new function()
                     var targetY = Math.max(rect.y - 100, 0);
 
                     while (targetY >= 0) {
-                        window.scrollTo(0, targetY);
+                        if (targetY != 0) {
+                            window.scrollTo(0, targetY);
+                        } else {
+                            window.scrollTo(0, -1);
+                        }
                         var scrollCoords = this.getScrollCoords(window.document.documentElement);
 
                         targetY -= scrollCoords.y;
