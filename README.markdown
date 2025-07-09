@@ -45,8 +45,8 @@ dependencies), and `build` (containing your auditor). You can then move
 (or symlink as appropriate) your `build` directory to a web-accessible
 location.
 
-Then grab or copy the JavaScript from the auditor bookmarklet from the [HTML_CodeSniffer site](https://squizlabs.github.io/HTML_CodeSniffer),
-replace the directory at the start (//squizlabs.github.io/HTML_CodeSniffer/build) with your local URL, and save as a new bookmarklet.
+Then grab or copy the JavaScript from the auditor bookmarklet from the [HTML_CodeSniffer site](https://kant2002.github.io/HTML_CodeSniffer),
+replace the directory at the start (//kant2002.github.io/HTML_CodeSniffer/build) with your local URL, and save as a new bookmarklet.
 
 ### Debug build
 
@@ -163,7 +163,7 @@ If other language support is required a custom version can be built by adding mo
 ## Contributing and reporting issues
 
 To report any issues with using HTML_CodeSniffer, please use the
-[HTML_CodeSniffer Issue Tracker](http://github.com/squizlabs/HTML_CodeSniffer/issues).
+[HTML_CodeSniffer Issue Tracker](http://github.com/kant2002/HTML_CodeSniffer/issues).
 
 Contributions to the HTML_CodeSniffer code base are also welcome: please create a
 fork of the main repository, then submit your modified code through a
@@ -174,7 +174,7 @@ contribute, you do not need to do both.
 ## More Information
 
 More information on HTML_CodeSniffer can be found on its GitHub site,
-[http://squizlabs.github.io/HTML_CodeSniffer/](http://squizlabs.github.io/HTML_CodeSniffer/). This site provides:
+[http://kant2002.github.io/HTML_CodeSniffer/](http://kant2002.github.io/HTML_CodeSniffer/). This site provides:
 
 * Information on the tests performed (and messages emitted) by HTML_CodeSniffer's standards, organised by conformance level and Success Criterion;
 * A source test area that allows you to try out HTML_CodeSniffer with your own HTML source code; and
